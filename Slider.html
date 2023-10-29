@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul Slider</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="slider" id="slider1">
+        <div class="slide"><span><</span></div>
+        <div class="screen">
+            <img src="img/1.jpg" alt="alt">
+            <img src="img/2.jpg" alt="alt">
+            <img src="img/3.jpg" alt="alt">
+            <img src="img/4.jpg" alt="alt">
+            <img src="img/5.jpg" alt="alt">
+            <img src="img/6.jpg" alt="alt">
+        </div>
+        <div class="slide"><span>></span></div>
+    </div>
+
+    <div class="slider" id="slider2">
+        <div class="slide"><span><</span></div>
+        <div class="screen">
+            <img src="img/1.jpg" alt="alt">
+            <img src="img/2.jpg" alt="alt">
+            <img src="img/3.jpg" alt="alt">
+            <img src="img/4.jpg" alt="alt">
+            <img src="img/5.jpg" alt="alt">
+            <img src="img/6.jpg" alt="alt">
+        </div>
+        <div class="slide"><span>></span></div>
+    </div>
+
+    <div class="slider" id="slider3">
+        <div class="slide"><span><</span></div>
+        <div class="screen">
+            <img src="img/1.jpg" alt="alt">
+            <img src="img/2.jpg" alt="alt">
+            <img src="img/3.jpg" alt="alt">
+            <img src="img/4.jpg" alt="alt">
+            <img src="img/5.jpg" alt="alt">
+            <img src="img/6.jpg" alt="alt">
+        </div>
+        <div class="slide"><span>></span></div>
+    </div>
+
+    <script src="js/slider.js"></script>
+    <script>
+        let slider = new Carusel({
+            elem: document.querySelectorAll('#slider1 img'),
+            btn: document.querySelectorAll('#slider1 span'),
+            nav: true,
+            title: 'Галерея',
+        });
+
+        let slider2 = new Carusel({
+            elem: document.querySelectorAll('#slider2 img'),
+            btn: document.querySelectorAll('#slider2 span'),
+            nav: false,
+            autoplay: true,
+        });
+
+        let slider3 = new Carusel({
+            elem: document.querySelectorAll('#slider3 img'),
+            btn: document.querySelectorAll('#slider3 span'),
+            nav: true,
+            autoplay: true,
+            speed: 4000,
+        });
+    </script>
+</body>
+</html>
